@@ -11,17 +11,26 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BiblioTecca.DAL;
 
-namespace BiblioTecca.View
+namespace BiblioTecca.Views
 {
     /// <summary>
     /// Interaction logic for frmManterPessoa.xaml
     /// </summary>
-    public partial class frmManterPessoa : Window
+    public partial class frm_ManterPessoa : Window
     {
-        public frmManterPessoa()
+        public frm_ManterPessoa()
         {
-            InitializeComponent();
+            InitializeComponent();            
+        }
+
+        private void btn_Buscar_Cpf_Click(object sender, RoutedEventArgs e)
+        {
+            if (txt_Cpf.Text == null)
+            {
+                
+            }
         }
     }
 }

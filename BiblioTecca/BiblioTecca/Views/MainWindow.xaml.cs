@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BiblioTecca.Views;
 
 namespace BiblioTecca.Views
 {
@@ -27,7 +28,8 @@ namespace BiblioTecca.Views
 
         private void btn_CRUDPessoa_Click(object sender, RoutedEventArgs e)
         {
-
+            frm_ManterPessoa p = new frm_ManterPessoa();
+            p.ShowDialog();
         }
     }
 }
