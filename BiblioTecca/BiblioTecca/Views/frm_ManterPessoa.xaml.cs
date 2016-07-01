@@ -10,26 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using BiblioTecca.Views;
+using BiblioTecca.DAL;
 
 namespace BiblioTecca.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for frmManterPessoa.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class frm_ManterPessoa : Window
     {
-        public MainWindow()
+        public frm_ManterPessoa()
         {
             InitializeComponent();
         }
 
-        private void btn_CRUDPessoa_Click(object sender, RoutedEventArgs e)
+        private void btn_Buscar_Cpf_Click(object sender, RoutedEventArgs e)
         {
-            frm_ManterPessoa p = new frm_ManterPessoa();
-            p.ShowDialog();
+            if (txt_Cpf.Text == null)
+            {
+
+            }
         }
     }
 }
