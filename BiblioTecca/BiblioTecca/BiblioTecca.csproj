@@ -62,15 +62,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Views\frmManterLivro.xaml.cs">
-      <DependentUpon>frmManterLivro.xaml</DependentUpon>
+    <Compile Include="Views\frm_ManterLivro.xaml.cs">
+      <DependentUpon>frm_ManterLivro.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\frm_ManterPessoa.xaml.cs">
       <DependentUpon>frm_ManterPessoa.xaml</DependentUpon>
-    <Compile Include="Views\frm_ManterPessoa.xaml.cs">
-      <DependentUpon>frm_ManterPessoa.xaml</DependentUpon>
     </Compile>
-    <Page Include="Views\frmManterLivro.xaml">
+    <Page Include="Views\frm_ManterLivro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
