@@ -4,9 +4,11 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Menu HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="517">
-            <MenuItem x:Name="btn_Cadastro" Header="Cadastro" Click="MenuItem_Click" Height="30" FontSize="20" FontFamily="Courier New">
-                <MenuItem Header="MenuItem" HorizontalAlignment="Left" Width="186"/>
-                <MenuItem Header="Pessoas" HorizontalAlignment="Left" Width="186"/>
+            <MenuItem x:Name="MenuCadastro" Header="Cadastro" Click="MenuItem_Click" Height="30" FontSize="20" FontFamily="Courier New">
+                <MenuItem x:Name="btn_CRUDLivro" Header="Livro" HorizontalAlignment="Left" Width="186"/>
+                <MenuItem x:Name="btn_CRUDPessoa" Header="Pessoas" HorizontalAlignment="Left" Width="186"/>
+                <Separator HorizontalAlignment="Left" Width="186"/>
+                <MenuItem x:Name="btn_Sair" Header="Sair" HorizontalAlignment="Left" Width="186"/>
             </MenuItem>
         </Menu>
 
