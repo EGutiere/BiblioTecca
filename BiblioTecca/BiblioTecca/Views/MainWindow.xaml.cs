@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BiblioTecca
+namespace BiblioTecca.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,9 +25,9 @@ namespace BiblioTecca
             InitializeComponent();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void btn_CRUDPessoa_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }
