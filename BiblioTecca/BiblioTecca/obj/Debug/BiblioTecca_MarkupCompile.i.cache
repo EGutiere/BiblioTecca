@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\
+C:\Users\joao.siqueira\Source\Repos\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\
 BiblioTecca
 none
 false
 DEBUG;TRACE
-E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\App.xaml
+C:\Users\joao.siqueira\Source\Repos\BiblioTecca\BiblioTecca\BiblioTecca\App.xaml
 4224975144
 
-182071601413
-152108017785
+181571997889
+15-221644062
 Views\frm_Alugar_Devolver.xaml;Views\frm_ManterLivro.xaml;Views\MainWindow.xaml;Views\frm_ManterPessoa.xaml;
 
 False

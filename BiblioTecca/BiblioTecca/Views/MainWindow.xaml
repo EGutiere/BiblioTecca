@@ -1,11 +1,11 @@
 ﻿<Window x:Class="BiblioTecca.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Biblioteca" Height="350" Width="525">
+        Title="Biblioteca" Height="350" Width="525" Icon="/BiblioTecca;component/Icons/Alecive-Flatwoken-Apps-Library.ico">
     <Grid>
         <Menu HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="517">
             <MenuItem x:Name="MenuCadastro" Header="Cadastros"  Height="30" FontSize="20" FontFamily="Courier New">
-                <MenuItem x:Name="Menu_CRUD_Livro" Header="Livros" HorizontalAlignment="Left" Width="186" Click="Menu_CRUDLivro_Click"/>
+                <MenuItem x:Name="Menu_CRUD_Livro" Header="Livros" HorizontalAlignment="Left" Width="186" Click="Menu_CRUDLivro_Click" />
                 <MenuItem x:Name="Menu_CRUD_Pessoa" Header="Pessoas" HorizontalAlignment="Left" Width="186" Click="Menu_CRUD_Pessoa_Click" />
                 <Separator HorizontalAlignment="Left" Width="186"/>
                 <MenuItem x:Name="Menu_Sair" Header="Sair" HorizontalAlignment="Left" Width="186"/>

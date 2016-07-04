@@ -130,7 +130,28 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Icons\alterar\" />
+    <Folder Include="Icons\cadastro\" />
+    <Folder Include="Icons\cancelar\" />
+    <Folder Include="Icons\confirmar\" />
+    <Folder Include="Icons\excluir\" />
+    <Folder Include="Icons\explorar\" />
+    <Folder Include="Icons\ferramentas do sistema\" />
+    <Folder Include="Icons\filtrar\" />
+    <Folder Include="Icons\imprimir\" />
+    <Folder Include="Icons\inserir\" />
+    <Folder Include="Icons\movimentação\" />
+    <Folder Include="Icons\painel de controle\" />
+    <Folder Include="Icons\pessoa\" />
+    <Folder Include="Icons\procurar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Alecive-Flatwoken-Apps-Library.ico" />
+    <Resource Include="Icons\Mcdo-Design-Smooth-Leopard-Library-Folder-Graphite.ico" />
+    <Resource Include="Icons\Oxygen-Icons.org-Oxygen-Apps-preferences-contact-list.ico" />
+    <Resource Include="Icons\Oxygen-Icons.org-Oxygen-Apps-preferences-desktop-user-password.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
