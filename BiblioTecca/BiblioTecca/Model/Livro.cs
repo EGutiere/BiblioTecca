@@ -13,8 +13,9 @@ namespace BiblioTecca.Model
     {
         [Key]
         public int IdLivro { get; set; }
-        public string Nome { get; set; }
-        public string Coletanea { get; set; }
-        public string Ano { get; set; }
+        public string LivroNome { get; set; }
+        public string LivroColetanea { get; set; }
+        public string LivroClassificacao { get; set; }
+        public string LivroSituacao { get; set; }
     }
 }

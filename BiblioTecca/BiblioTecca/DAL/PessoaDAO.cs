@@ -11,7 +11,7 @@ namespace BiblioTecca.DAL
     {
         private static Context ctx = Singleton.Instance.Context;
 
-        public static bool AdicionarCliente(Pessoa p)
+        public static bool AdicionarPessoa(Pessoa p)
         {
             if (VerificarPessoaPorCPF(p) == null)
             {
@@ -67,7 +67,7 @@ namespace BiblioTecca.DAL
 
         public static Pessoa VerificarPessoaPorCPF(Pessoa p)
         {
-            return ctx.Pessoas.FirstOrDefault(x => x.Cpf.Equals(p.Cpf));
+            return ctx.Pessoas.FirstOrDefault(x => x.PessoaCpf.Equals(p.PessoaCpf));
         }
     }
 }

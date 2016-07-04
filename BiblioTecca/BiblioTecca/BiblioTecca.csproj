@@ -62,12 +62,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Views\frm_Alugar_Devolver.xaml.cs">
+      <DependentUpon>frm_Alugar_Devolver.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\frm_ManterLivro.xaml.cs">
       <DependentUpon>frm_ManterLivro.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\frm_ManterPessoa.xaml.cs">
       <DependentUpon>frm_ManterPessoa.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\frm_Alugar_Devolver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\frm_ManterLivro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

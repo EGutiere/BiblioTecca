@@ -13,9 +13,7 @@ namespace BiblioTecca.Model
     {
         [Key]
         public int IdPessoa { get; set; }
-        public string Nome { get; set; }
-        public string DataNasc { get; set; }
-        public string Telefone { get; set; }
-        public string Cpf { get; set; }
+        public string PessoaNome { get; set; }
+        public string PessoaCpf { get; set; }
     }
 }

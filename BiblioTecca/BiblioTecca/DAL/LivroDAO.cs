@@ -39,7 +39,7 @@ namespace BiblioTecca.DAL
             }
         }
 
-        public static bool RemoverPessoa(Livro l)
+        public static bool RemoverLivro(Livro l)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace BiblioTecca.DAL
 
         public static Livro VerificarLivroPorNome(Livro l)
         {
-            return ctx.Livros.FirstOrDefault(x => x.Nome.Equals(l.Nome));
+            return ctx.Livros.FirstOrDefault(x => x.LivroNome.Equals(l.LivroNome));
         }        
     }
 }

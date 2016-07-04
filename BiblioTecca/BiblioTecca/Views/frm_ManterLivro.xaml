@@ -3,18 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Cadastro - Livro" Height="300" Width="567.073">
     <Grid Margin="0,0,2,0">
-        <TextBox x:Name="txtTitulo_buscar" HorizontalAlignment="Left" Height="23" Margin="65,37,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="392"/>
-        <Label x:Name="labelTitulo_Buscar" Content="Título" HorizontalAlignment="Left" Margin="20,37,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_frmLivro_Pesquisar" Content="Pesquisar" HorizontalAlignment="Left" Margin="472,37,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Height="23" Margin="120,139,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="392"/>
-        <Label x:Name="labelTitulo" Content="Título" HorizontalAlignment="Left" Margin="40,134,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtColetanea" HorizontalAlignment="Left" Height="23" Margin="120,165,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="392"/>
-        <Label x:Name="labelColetanea" Content="Coletânea" HorizontalAlignment="Left" Margin="40,162,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labelAno" Content="Ano" HorizontalAlignment="Left" Margin="40,188,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtAno" HorizontalAlignment="Left" Height="23" Margin="120,191,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="392"/>
-        <Button x:Name="btn_frmLivro_Gravar" Content="Gravar" HorizontalAlignment="Left" Margin="472,238,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btn_frmLivro_Alterar" Content="Alterar" HorizontalAlignment="Left" Margin="392,238,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btn_frmLivro_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="312,238,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txt_Titulo_buscar" HorizontalAlignment="Left" Height="23" Margin="91,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <Label x:Name="lbl_Titulo_Buscar" Content="Título" HorizontalAlignment="Left" Margin="20,37,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_frmLivro_Buscar" Content="Buscar" HorizontalAlignment="Left" Margin="495,40,0,0" VerticalAlignment="Top" Width="52" Height="23" Click="btn_frmLivro_Buscar_Click"/>
+        <TextBox x:Name="txt_Titulo" HorizontalAlignment="Left" Height="23" Margin="91,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <Label x:Name="lbl_Titulo" Content="Título" HorizontalAlignment="Left" Margin="20,134,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Coletanea" HorizontalAlignment="Left" Height="23" Margin="91,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <Label x:Name="lbl_Coletanea" Content="Coletânea" HorizontalAlignment="Left" Margin="20,162,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_Classificacao" Content="Clasificação" HorizontalAlignment="Left" Margin="20,188,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Classificacao" HorizontalAlignment="Left" Height="23" Margin="91,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <Button x:Name="btn_frmLivro_Inserir" Content="Inserir" HorizontalAlignment="Left" Margin="232,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Inserir_Click"/>
+        <Button x:Name="btn_frmLivro_Alterar" Content="Alterar" HorizontalAlignment="Left" Margin="312,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Alterar_Click"/>
+        <Button x:Name="btn_frmLivro_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="392,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Excluir_Click"/>
+        <Button x:Name="btn_frmLivro_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="472,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Cancelar_Click"/>
 
     </Grid>
 </Window>
