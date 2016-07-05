@@ -62,6 +62,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DAL\LocacaoDAO.cs" />
     <Compile Include="Migrations\201607050007125_Biblioteca.cs" />
     <Compile Include="Migrations\201607050007125_Biblioteca.Designer.cs">
       <DependentUpon>201607050007125_Biblioteca.cs</DependentUpon>

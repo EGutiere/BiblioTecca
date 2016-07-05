@@ -15,8 +15,9 @@ namespace BiblioTecca.DAL
             this.Configuration.LazyLoadingEnabled = false;
         }
 
-        public DbSet<Pessoa> Pessoas { get; set; }        
+        public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Livro> Livros { get; set; }
-        
+        public DbSet<Locacao> Locacoes { get; set; }
+
     }
 }

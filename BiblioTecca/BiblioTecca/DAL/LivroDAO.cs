@@ -68,6 +68,11 @@ namespace BiblioTecca.DAL
         public static Livro VerificarLivroPorNome(Livro l)
         {
             return ctx.Livros.FirstOrDefault(x => x.LivroNome.Equals(l.LivroNome));
-        }        
+        }
+
+        public static Livro VerificarLivroPorCod(Livro l)
+        {
+            return ctx.Livros.FirstOrDefault(x => x.IdLivro.Equals(l.IdLivro));
+        }
     }
 }
