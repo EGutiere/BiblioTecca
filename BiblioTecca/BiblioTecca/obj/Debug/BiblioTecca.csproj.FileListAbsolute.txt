@@ -46,3 +46,4 @@ C:\Users\joao.siqueira\Source\Repos\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debu
 E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\Views\frm_Alugar_Devolver.g.cs
 E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca_MarkupCompile.lref
 E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\Views\frm_Alugar_Devolver.baml
+E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Migrations.Biblioteca.resources
