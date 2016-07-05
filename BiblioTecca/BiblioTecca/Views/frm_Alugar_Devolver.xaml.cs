@@ -43,13 +43,13 @@ namespace BiblioTecca.Views
 
                 if (locacao != null)
                 {
-                    txt_NomeLivro_Devolucao.Text = locacao.LocacaoLivro.LivroNome;
-                    txt_CodLivro_Devolucao.Text = Convert.ToString(locacao.LocacaoLivro.IdLivro);
+                    txt_NomeLivro_Locacao.Text = locacao.LocacaoLivro.LivroNome;
+                    txt_CodLivro_Locacao.Text = Convert.ToString(locacao.LocacaoLivro.IdLivro);
 
-                    txt_NomePessoa_Devolucao.Text = locacao.LocacaoPessoa.PessoaNome;
-                    txt_CpfPessoa_Devolucao.Text = locacao.LocacaoPessoa.PessoaCpf;
+                    txt_NomePessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaNome;
+                    txt_CpfPessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaCpf;
 
-                    txt_Data_Devolucao.Text = Convert.ToString(locacao.LocacaoData);
+                    txt_Data_Locacao.Text = Convert.ToString(locacao.LocacaoDataAluguel);
 
                     if (locacao.LocacaoStatus == true)
                     {
