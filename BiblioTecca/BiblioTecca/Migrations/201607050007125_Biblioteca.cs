@@ -16,6 +16,7 @@ namespace BiblioTecca.Migrations
                         LivroColetanea = c.String(),
                         LivroClassificacao = c.String(),
                         LivroSituacao = c.String(),
+                        LivroStatus = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.IdLivro);
             
