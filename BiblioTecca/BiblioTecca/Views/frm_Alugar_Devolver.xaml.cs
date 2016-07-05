@@ -40,15 +40,10 @@ namespace BiblioTecca.Views
 
             if (!string.IsNullOrEmpty(txt_IdLocacao_Buscar.Text))
             {
-                livro.IdLivro = Convert.ToInt16(txt_CodLivro_Devolucao);
-                locacao.LocacaoLivro = LivroDAO.VerificarLivroPorCod(livro);
+                locacao.IdLocacao = Convert.ToInt16(txt_IdLocacao_Buscar.Text);
 
-                pessoa.PessoaCpf = txt_CpfPessoa_Devolucao.Text;
-                locacao.LocacaoPessoa = PessoaDAO.VerificarPessoaPorCPF(pessoa);
+                locacao = LocacaoDAO.VerificarLocacaoPorIdLocacao(locacao);
 
-
-               
-                
                 if (locacao != null)
                 {
                     txt_NomeLivro_Devolucao.Text = locacao.LocacaoLivro.LivroNome;
