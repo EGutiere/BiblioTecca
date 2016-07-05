@@ -13,9 +13,9 @@ namespace BiblioTecca.Model
     {
         [Key]
         public int IdLocacao { get; set; }
-        public Pessoa Pessoa { get; set; }
-        public Livro Livro { get; set; }
-        public DateTime DataLocacao { get; set; }
-        public bool Status { get; set; }
+        public Pessoa LocacaoPessoa { get; set; }
+        public Livro LocacaoLivro { get; set; }
+        public DateTime LocacaoData { get; set; }
+        public bool LocacaoStatus { get; set; }
     }
 }
