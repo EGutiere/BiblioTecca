@@ -62,13 +62,13 @@ namespace BiblioTecca.Views
                 }
                 else
                 {
-                    MessageBox.Show("Livro não encontrado!", "Cadastro de Livro",
+                    MessageBox.Show("Locação não encontrado!", "Locação de Livros",
                     MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
             else
             {
-                MessageBox.Show("Favor preencher o campo da busca", "Cadastro de Livro",
+                MessageBox.Show("Favor preencher o campo da busca", "Locação de Livros",
                 MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
