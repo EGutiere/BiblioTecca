@@ -17,5 +17,6 @@ namespace BiblioTecca.Model
         public string LivroColetanea { get; set; }
         public string LivroClassificacao { get; set; }
         public string LivroSituacao { get; set; }
+        public bool LivroStatus { get; set; }
     }
 }
