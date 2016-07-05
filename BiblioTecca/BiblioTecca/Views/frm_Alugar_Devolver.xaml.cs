@@ -24,7 +24,6 @@ namespace BiblioTecca.Views
         private Livro livro = new Livro();
         private Locacao locacao = new Locacao();
         private Pessoa pessoa = new Pessoa();
-        private DateTime dataLocacao = new DateTime();
 
         public frm_Alugar_Devolver()
         {
@@ -34,10 +33,8 @@ namespace BiblioTecca.Views
          private void btn_frmEmprestimo_Buscar_Click(object sender, RoutedEventArgs e)
         {
             locacao = new Locacao();
-            livro = new Livro();
-            pessoa = new Pessoa();
-            dataLocacao = new DateTime();
 
+            
             if (!string.IsNullOrEmpty(txt_IdLocacao_Buscar.Text))
             {
                 locacao.IdLocacao = Convert.ToInt16(txt_IdLocacao_Buscar.Text);
@@ -51,6 +48,8 @@ namespace BiblioTecca.Views
 
                     txt_NomePessoa_Devolucao.Text = locacao.LocacaoPessoa.PessoaNome;
                     txt_CpfPessoa_Devolucao.Text = locacao.LocacaoPessoa.PessoaCpf;
+
+                    txt_Data_Devolucao.Text = Convert.ToString(locacao.LocacaoData);
 
                     if (locacao.LocacaoStatus == true)
                     {

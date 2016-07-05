@@ -184,6 +184,22 @@ namespace BiblioTecca.Views {
         #line default
         #line hidden
         
+        
+        #line 30 "..\..\..\Views\frm_Alugar_Devolver.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.DatePicker txt_Data_Devolucao;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 31 "..\..\..\Views\frm_Alugar_Devolver.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label lbl_Status_Locacao_Copy;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -281,6 +297,12 @@ namespace BiblioTecca.Views {
             return;
             case 19:
             this.btn_fmr_Livros_Alugar_Devolver_Cancelar = ((System.Windows.Controls.Button)(target));
+            return;
+            case 20:
+            this.txt_Data_Devolucao = ((System.Windows.Controls.DatePicker)(target));
+            return;
+            case 21:
+            this.lbl_Status_Locacao_Copy = ((System.Windows.Controls.Label)(target));
             return;
             }
             this._contentLoaded = true;

@@ -27,6 +27,8 @@
         <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Alterar" Content="Alterar" HorizontalAlignment="Left" Margin="335,239,0,0" VerticalAlignment="Top" Width="75" />
         <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="415,239,0,0" VerticalAlignment="Top" Width="75" />
         <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="495,239,0,0" VerticalAlignment="Top" Width="75" />
+        <DatePicker x:Name="txt_Data_Devolucao" HorizontalAlignment="Left" Margin="367,175,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="lbl_Status_Locacao_Copy" Content="Data Locação" HorizontalAlignment="Left" Margin="281,173,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
