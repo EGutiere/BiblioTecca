@@ -13,7 +13,7 @@ namespace BiblioTecca.DAL
 
         public static bool AdicionarLivro(Livro l)
         {
-            if (VerificarLivroPorNome(l) == null)
+            if (VerificarLivroPorNome(l) == null && VerificarLivroPorCod(l) == null)
             {
                 ctx.Livros.Add(l);
                 ctx.SaveChanges();

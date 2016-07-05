@@ -13,9 +13,16 @@ namespace BiblioTecca.DAL
 
         public static bool AdicionarLocacao(Locacao l)
         {
-            ctx.Locacoes.Add(l);
-            ctx.SaveChanges();
-            return true;
+            if (VerificarLocacaoPorIdLocacao(l) == null)
+            {
+                ctx.Locacoes.Add(l);
+                ctx.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static Locacao VerificarLocacaoPorNomePessoa(Locacao l)
@@ -28,6 +35,12 @@ namespace BiblioTecca.DAL
         {
             return ctx.Locacoes.FirstOrDefault(
                 x => x.LocacaoLivro.LivroNome.Equals(l.LocacaoLivro.LivroNome));
+        }
+
+        public static Locacao VerificarLocacaoPorIdLocacao(Locacao l)
+        {
+            return ctx.Locacoes.FirstOrDefault(
+                x => x.IdLocacao.Equals(l.IdLocacao));
         }
 
         public static List<Locacao> RetornarListaDeLocacoes(Locacao l)

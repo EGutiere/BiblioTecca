@@ -21,7 +21,10 @@ namespace BiblioTecca.Views
     /// </summary>
     public partial class frm_Alugar_Devolver : Window
     {
-        private Livro l = new Livro();
+        private Livro livro = new Livro();
+        private Locacao locacao = new Locacao();
+        private Pessoa pessoa = new Pessoa();
+        private DateTime dataLocacao = new DateTime();
 
         public frm_Alugar_Devolver()
         {
@@ -30,16 +33,38 @@ namespace BiblioTecca.Views
 
          private void btn_frmEmprestimo_Buscar_Click(object sender, RoutedEventArgs e)
         {
-            l = new Livro();
-            if (!string.IsNullOrEmpty(txt_Titulo_buscar.Text))
+            locacao = new Locacao();
+            livro = new Livro();
+            pessoa = new Pessoa();
+            dataLocacao = new DateTime();
+
+            if (!string.IsNullOrEmpty(txt_IdLocacao_Buscar.Text))
             {
-                l.LivroNome = txt_Titulo_buscar.Text;
-                l = LivroDAO.VerificarLivroPorNome(l);
-                if (l != null)
+                livro.IdLivro = Convert.ToInt16(txt_CodLivro_Devolucao);
+                locacao.LocacaoLivro = LivroDAO.VerificarLivroPorCod(livro);
+
+                pessoa.PessoaCpf = txt_CpfPessoa_Devolucao.Text;
+                locacao.LocacaoPessoa = PessoaDAO.VerificarPessoaPorCPF(pessoa);
+
+
+               
+                
+                if (locacao != null)
                 {
-                    txt_Titulo.Text = l.LivroNome;
-                    txt_Coletanea.Text = l.LivroColetanea;
-                    txt_Classificacao.Text = l.LivroClassificacao;
+                    txt_NomeLivro_Devolucao.Text = locacao.LocacaoLivro.LivroNome;
+                    txt_CodLivro_Devolucao.Text = Convert.ToString(locacao.LocacaoLivro.IdLivro);
+
+                    txt_NomePessoa_Devolucao.Text = locacao.LocacaoPessoa.PessoaNome;
+                    txt_CpfPessoa_Devolucao.Text = locacao.LocacaoPessoa.PessoaCpf;
+
+                    if (locacao.LocacaoStatus == true)
+                    {
+                        txt_Situacao.Text = "Alugado";
+                    }
+                    else
+                    {
+                        txt_Situacao.Text = "Devolvido";
+                    }
                 }
                 else
                 {
@@ -52,6 +77,11 @@ namespace BiblioTecca.Views
                 MessageBox.Show("Favor preencher o campo da busca", "Cadastro de Livro",
                 MessageBoxButton.OK, MessageBoxImage.Information);
             }
+        }
+
+        private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
