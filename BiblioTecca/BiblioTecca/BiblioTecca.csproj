@@ -67,6 +67,10 @@
     <Compile Include="Migrations\201607050007125_Biblioteca.Designer.cs">
       <DependentUpon>201607050007125_Biblioteca.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607052239022_bb8.cs" />
+    <Compile Include="Migrations\201607052239022_bb8.Designer.cs">
+      <DependentUpon>201607052239022_bb8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Locacao.cs" />
     <Compile Include="Views\frm_Alugar_Devolver.xaml.cs">
@@ -126,6 +130,9 @@
     <EmbeddedResource Include="Migrations\201607050007125_Biblioteca.resx">
       <DependentUpon>201607050007125_Biblioteca.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607052239022_bb8.resx">
+      <DependentUpon>201607052239022_bb8.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -153,7 +160,6 @@
     <Folder Include="Icons\inserir\" />
     <Folder Include="Icons\movimentação\" />
     <Folder Include="Icons\painel de controle\" />
-    <Folder Include="Icons\pessoa\" />
     <Folder Include="Icons\procurar\" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +167,9 @@
     <Resource Include="Icons\Mcdo-Design-Smooth-Leopard-Library-Folder-Graphite.ico" />
     <Resource Include="Icons\Oxygen-Icons.org-Oxygen-Apps-preferences-contact-list.ico" />
     <Resource Include="Icons\Oxygen-Icons.org-Oxygen-Apps-preferences-desktop-user-password.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\pessoa\pessoa.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
