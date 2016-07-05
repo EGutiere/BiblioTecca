@@ -43,3 +43,6 @@ C:\Users\joao.siqueira\Source\Repos\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debu
 C:\Users\joao.siqueira\Source\Repos\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.g.resources
 C:\Users\joao.siqueira\Source\Repos\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Properties.Resources.resources
 C:\Users\joao.siqueira\Source\Repos\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.csproj.GenerateResource.Cache
+E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\Views\frm_Alugar_Devolver.g.cs
+E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca_MarkupCompile.lref
+E:\Projetos_C#\BiblioPeka\BiblioTecca\BiblioTecca\BiblioTecca\obj\Debug\Views\frm_Alugar_Devolver.baml
