@@ -17,7 +17,7 @@ namespace BiblioTecca.Model
         public Livro LocacaoLivro { get; set; }
         public DateTime LocacaoDataAluguel { get; set; }
         public DateTime LocacaoDataLimite { get; set; }
-        public DateTime LocacaoDataDevolucao { get; set; }
+        public DateTime ? LocacaoDataDevolucao { get; set; }
         public bool LocacaoStatus { get; set; }
     }
 }

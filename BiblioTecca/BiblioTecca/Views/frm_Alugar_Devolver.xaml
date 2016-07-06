@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="Livros - Alugar / Devolver" Height="300" Width="593.318">
     <Grid Margin="0,0,2,0">
-        <TextBox x:Name="txt_IdLocacao_Buscar" HorizontalAlignment="Left" Height="23" Margin="91,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" TextChanged="txt_IdLocacao_Buscar_TextChanged"/>
+        <TextBox x:Name="txt_IdLocacao_Buscar" HorizontalAlignment="Left" Height="23" Margin="91,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" />
         <Label x:Name="lbl_IdLocacao_Buscar" Content="Cod Locação" HorizontalAlignment="Left" Margin="8,37,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btn_frmEmprestimo_Buscar" Content="Buscar" HorizontalAlignment="Left" Margin="495,40,0,0" VerticalAlignment="Top" Width="52" Height="23" Click="btn_frmEmprestimo_Buscar_Click"/>
-        <TextBox x:Name="txt_NomeLivro_Locacao" HorizontalAlignment="Left" Height="23" Margin="367,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" IsEnabled="False" TextChanged="txt_NomeLivro_Locacao_TextChanged"/>
+        <TextBox x:Name="txt_NomeLivro_Locacao" HorizontalAlignment="Left" Height="23" Margin="367,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" IsEnabled="False" />
         <Label x:Name="lbl_Livro_Locacao" Content="Livro" HorizontalAlignment="Left" Margin="326,116,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txt_NomePessoa_Locacao" HorizontalAlignment="Left" Height="23" Margin="367,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" IsEnabled="False"/>
         <Label x:Name="lbl_Pessoa_Locacao" Content="Pessoa" HorizontalAlignment="Left" Margin="316,142,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbl_Status_Locacao" Content="Status" HorizontalAlignment="Left" Margin="20,170,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_CodLivro_Locacao" HorizontalAlignment="Left" Height="23" Margin="91,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextChanged="txt_CodLivro_Locacao_TextChanged"/>
+        <TextBox x:Name="txt_CodLivro_Locacao" HorizontalAlignment="Left" Height="23" Margin="91,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" />
         <Label x:Name="lbl_CodLivro_Locacao" Content="Cod Livro" HorizontalAlignment="Left" Margin="26,119,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txt_CpfPessoa_Locacao" HorizontalAlignment="Left" Height="23" Margin="91,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
         <Label x:Name="lbl_Cpf_Pessoa_Locacao" Content="CPF da Pessoa" HorizontalAlignment="Left" Margin="5,142,0,0" VerticalAlignment="Top"/>
@@ -23,10 +23,13 @@
             <ComboBoxItem Content="Alugado" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
             <ComboBoxItem Content="Devolvido" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
-        <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Gravar" Content="Gravar" HorizontalAlignment="Left" Margin="415,239,0,0" VerticalAlignment="Top" Width="75" Click="btn_fmr_Livros_Alugar_Devolver_Gravar_Click" />
+        <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Locar" Content="Locação" HorizontalAlignment="Left" Margin="316,239,0,0" VerticalAlignment="Top" Width="75" Click="btn_fmr_Livros_Alugar_Devolver_Gravar_Click" />
         <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="495,239,0,0" VerticalAlignment="Top" Width="75" />
-        <DatePicker x:Name="txt_Data_Locacao" HorizontalAlignment="Left" Margin="367,175,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False"/>
-        <Label x:Name="lbl_Status_Locacao_Copy" Content="Data Locação" HorizontalAlignment="Left" Margin="281,173,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="txt_Data_Limite_Devolucao" HorizontalAlignment="Left" Margin="367,175,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False"/>
+        <Label x:Name="lbl_Data_Limite_Devolucao" Content="Data Limite Devolução" HorizontalAlignment="Left" Margin="233,175,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="txt_Data_Devolucao" HorizontalAlignment="Left" Margin="367,204,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="lbl_Data_Limite_Devolucao_Copy" Content="Data Devolução" HorizontalAlignment="Left" Margin="268,202,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Devolver" Content="Devolução" HorizontalAlignment="Left" Margin="408,239,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmPessoa_Alterar_Click" />
 
     </Grid>
 </Window>

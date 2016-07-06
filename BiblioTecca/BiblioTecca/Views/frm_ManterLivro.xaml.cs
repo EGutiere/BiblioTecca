@@ -40,6 +40,7 @@ namespace BiblioTecca.Views
                     txt_Titulo.Text = l.LivroNome;
                     txt_Coletanea.Text = l.LivroColetanea;
                     txt_Classificacao.Text = l.LivroClassificacao;
+                    txt_IdLivro.Text = Convert.ToString(l.IdLivro);
                 }
                 else
                 {

@@ -35,12 +35,13 @@ namespace BiblioTecca.Views
         {
             locacao = new Locacao();
 
+            locacao.IdLocacao = Convert.ToInt16(txt_IdLocacao_Buscar.Text);            
+
+            locacao = LocacaoDAO.VerificarLocacaoPorIdLocacao(locacao);
+
             if (!string.IsNullOrEmpty(txt_IdLocacao_Buscar.Text))
             {
-                locacao.IdLocacao = Convert.ToInt16(txt_IdLocacao_Buscar.Text);
-
-                locacao = LocacaoDAO.VerificarLocacaoPorIdLocacao(locacao);
-
+               
                 if (locacao != null)
                 {
                     txt_NomeLivro_Locacao.Text = locacao.LocacaoLivro.LivroNome;
@@ -49,7 +50,7 @@ namespace BiblioTecca.Views
                     txt_NomePessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaNome;
                     txt_CpfPessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaCpf;
 
-                    txt_Data_Locacao.Text = Convert.ToString(locacao.LocacaoDataAluguel);
+                    txt_Data_Limite_Devolucao.Text = Convert.ToString(locacao.LocacaoDataAluguel);
 
                     if (locacao.LocacaoStatus == true)
                     {
@@ -80,22 +81,42 @@ namespace BiblioTecca.Views
             pessoa = new Pessoa();
             locacao.LocacaoDataAluguel = DateTime.Today;
             locacao.LocacaoDataLimite = DateTime.Today.AddDays(10);
-
             
-            livro.IdLivro = Convert.ToInt16(txt_CodLivro_Locacao);
+                        
+            livro.IdLivro = Convert.ToInt16(txt_CodLivro_Locacao.Text);
 
-            if (LivroDAO.VerificarLivroPorCod(livro) != null)
+            try
             {
                 locacao.LocacaoLivro = LivroDAO.VerificarLivroPorCod(livro);
             }
+            catch
+            {
+                MessageBox.Show("Livro Não Encontrado", "Livro",
+                MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            
 
             pessoa.PessoaCpf = txt_CpfPessoa_Locacao.Text;
 
-            if (PessoaDAO.VerificarPessoaPorCPF(pessoa) != null)
+            try
             {
                 locacao.LocacaoPessoa = PessoaDAO.VerificarPessoaPorCPF(pessoa);
             }
-            
+            catch
+            {
+                MessageBox.Show("asjdlkajsd", "Livro",
+                MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            if (txt_Situacao.Text == "Alugado")
+            {
+                locacao.LocacaoStatus = true;
+            }
+            else
+            {
+                locacao.LocacaoStatus = false;
+            }
+
             if (LocacaoDAO.AdicionarLocacao(locacao))
             {
                 MessageBox.Show("Gravado com sucesso!", "Locação",
@@ -108,6 +129,68 @@ namespace BiblioTecca.Views
             }
 
         }
+
+        private void btn_frmPessoa_Alterar_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Devolução Feita?", "Alterar Locação", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                locacao = new Locacao();
+                livro = new Livro();
+                pessoa = new Pessoa();
+                locacao.LocacaoDataAluguel = DateTime.Today;
+                locacao.LocacaoDataLimite = DateTime.Today.AddDays(10);
+
+
+                livro.IdLivro = Convert.ToInt16(txt_CodLivro_Locacao.Text);
+
+                try
+                {
+                    locacao.LocacaoLivro = LivroDAO.VerificarLivroPorCod(livro);
+                }
+                catch
+                {
+                    MessageBox.Show("Livro Não Encontrado", "Livro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+
+                pessoa.PessoaCpf = txt_CpfPessoa_Locacao.Text;
+
+                try
+                {
+                    locacao.LocacaoPessoa = PessoaDAO.VerificarPessoaPorCPF(pessoa);
+                }
+                catch
+                {
+                    MessageBox.Show("asjdlkajsd", "Livro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+                if (txt_Situacao.Text == "Alugado")
+                {
+                    locacao.LocacaoStatus = true;
+                }
+                else
+                {
+                    locacao.LocacaoStatus = false;
+                }
+
+                if (LocacaoDAO.AlterarLocacao(locacao))
+                {
+                    MessageBox.Show("Gravado com sucesso!", "Locação",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível gravar!", "Locação",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                
+                
+            }
+            
+        }
+
 
         private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
         {

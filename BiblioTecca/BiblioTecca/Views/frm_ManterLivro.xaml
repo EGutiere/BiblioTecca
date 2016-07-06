@@ -16,6 +16,8 @@
         <Button x:Name="btn_frmLivro_Alterar" Content="Alterar" HorizontalAlignment="Left" Margin="312,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Alterar_Click"/>
         <Button x:Name="btn_frmLivro_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="392,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Excluir_Click"/>
         <Button x:Name="btn_frmLivro_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="472,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Cancelar_Click"/>
+        <Label x:Name="lbl_IdLivro" Content="Id do Livro" HorizontalAlignment="Left" Margin="20,108,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_IdLivro" HorizontalAlignment="Left" Height="23" Margin="91,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" IsEnabled="False"/>
 
     </Grid>
 </Window>
